@@ -1,1 +1,1 @@
-A website devoted to documenting all of the incredible things that computer science has contributed to our society
+A website devoted to documenting some of the greatest things that computer science has contributed to our society
