@@ -1,0 +1,116 @@
+*{
+	margin 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+html, body {
+	height:100%;
+	margin: 0;
+}
+
+body {
+	background-color: #212121;
+	perspective: 1000px;
+}
+
+#background {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	background-image: url(../images/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+
+	overflow: hidden;
+
+	-webkit-transition: opacity 1s ease-out;
+	-moz-transition: opacity 1s ease-out;
+	-o-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
+}
+
+#content {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+#mainContainer {	
+	padding: 5em 5em;
+
+	background-color: #000;
+	opacity: 0;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotateX(25deg);
+	
+	-webkit-transition: .6s ease-out;
+	-moz-transition: .6s ease-out;
+	-o-transition: .6s ease-out;
+	transition: .6s ease-out;
+
+	border-radius: 3px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#nav {
+	display: inline;
+	float: left
+}
+
+#nav > h1 {
+	font-size: 1.75em;
+	letter-spacing: 0.15em;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+#nav > ul {
+	margin: 0.5em 0;
+}
+
+.navSubHeadings {
+	font-size: 1.25em;
+	letter-spacing: 0.15em;
+	margin 0 auto;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+#info {
+	display: inline;
+	float: left;
+	margin-left: 2.5em;
+	max-width: 75%
+}
+
+#info > h1 {
+	font-size: 2.5em;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+/*h2 {
+	font-size: 1.25em;
+	letter-spacing: 0.15em;
+	margin 0 auto;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1em;
+	letter-spacing: 0.15em;
+	margin 0 auto;
+	text-transform: uppercase;
+}*/
+
+a {
+	text-decoration: none;
+}
