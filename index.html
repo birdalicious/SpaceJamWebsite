@@ -78,7 +78,6 @@
 		$('#p5').css({opacity:1, width: '0px', height: '0px'});
 		$('#p6').css({opacity:1, width: '0px', height: '0px'});
 
-
 		$('#mainplanet').animate({width: '272px', height: '163px'}, animation);
 		setTimeout(function() {
 			setTimeout(function() {
@@ -87,15 +86,15 @@
 					$('#p1').animate({width: '75px', height: '75px'},animation);
 					setTimeout(function() {
 						$('#p2').animate({width: '75px', height: '75px'},animation);
+						setTimeout(function() {
+							$('#p4').animate({width: '75px', height: '75px'},animation);
 							setTimeout(function() {
-								$('#p4').animate({width: '75px', height: '75px'},animation);
+								$('#p6').animate({width: '75px', height: '75px'},animation);
 								setTimeout(function() {
-									$('#p6').animate({width: '75px', height: '75px'},animation);
-									setTimeout(function() {
-										$('#p5').animate({width: '75px', height: '75px'},animation);
-									}, wait)
+									$('#p5').animate({width: '75px', height: '75px'},animation);
 								}, wait)
 							}, wait)
+						}, wait)
 					}, wait)
 				}, wait)
 			}, wait)
