@@ -3,10 +3,14 @@
 }
 
 body {
-	background-image: url('../images/bg.gif')
+	background-color: #1A232C;
 }
 
 table {
 	margin-top: 200px;
 	width: 500px;
+}
+
+.circle {
+	border-radius: 50%
 }
