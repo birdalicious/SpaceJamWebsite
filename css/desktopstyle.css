@@ -3,9 +3,18 @@
 }
 
 body {
+	height: 100%;
+	width: 100%;
+
 	position: relative;
 	background-color: #1A232C;
-	overflow: hidden
+	overflow: hidden;
+	background-image: url('../images/bg.png');
+
+	background-attachment: fixed;
+	background-size: cover;
+
+	overflow: hidden;
 }
 
 table {
