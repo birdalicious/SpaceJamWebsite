@@ -3,7 +3,9 @@
 }
 
 body {
+	position: relative;
 	background-color: #1A232C;
+	overflow: hidden
 }
 
 table {
@@ -13,4 +15,24 @@ table {
 
 .circle {
 	border-radius: 50%
+}
+
+#bubble {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+	background-color: #64B5F6;
+}
+
+#secondarybubble {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+	background-color: #42A5F5;
 }

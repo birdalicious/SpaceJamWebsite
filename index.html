@@ -7,45 +7,122 @@
 </head>
 <body>
 	<center>
-		<table>
+		<table id="spacejamtable">
 			<tr height="100px">
 				<td valign="bottom" colspan="2">
 					
 				</td>
-				<td valign="top" style="padding-right: 50px">
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+				<td width="75px" height="75px" valign="top" style="padding-right: 50px">
+					<img id="p1" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
-				<td valign="bottom">
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+				<td width="75px" height="75px" valign="bottom">
+					<img id="p2" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
 			</tr>
 			<tr height="150px">
-				<td valign="top">
+				<td width="75px" height="75px" valign="top">
 					<!-- This will be a face -->
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+					<img id="p3" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
 				<td rowspan="2" colspan="3">
-					<img src="https://via.placeholder.com/272x163" alt="">
+					<img id="mainplanet" src="https://via.placeholder.com/272x163" alt="">
 				</td>
 			</tr>
 			<tr>
 				<td>
-					
+
 				</td>
-				<td>
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+				<td width="75px" height="75px">
+					<img id="p4" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
 			</tr>
 			<tr height="85px">
-				<td valign="top" colspan="3">
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+				<td width="75px" height="75px" valign="top" colspan="3">
+					<img id="p5" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
-				<td valign="bottom">
+				<td width="75px" height="75px" valign="bottom">
 					<!-- This will be a face -->
-					<img src="https://via.placeholder.com/75x75" alt="" class="circle">
+					<img id="p6" src="https://via.placeholder.com/75x75" alt="" class="circle">
 				</td>
 			</tr>
 		</table>
+		<div id="secondarybubble"></div>
+		<div id="bubble">
+			
+		</div>
 	</center>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	var WIDTH = $(window).width(),
+		HEIGHT = $(window).height();
+
+	var bubbleSize = WIDTH*2;
+
+	$(window).resize(function() {
+		WIDTH = $(window).width();
+		HEIGHT = $(window).height();
+	});
+
+	function spacejam() {
+		var wait = 250;
+			animation = 750
+
+		$('#spacejamtable').css({opacity:1})
+
+		$('#mainplanet').css({opacity:1, width: '0px', height: '0px'});
+		$('#p1').css({opacity:1, width: '0px', height: '0px'});
+		$('#p2').css({opacity:1, width: '0px', height: '0px'});
+		$('#p3').css({opacity:1, width: '0px', height: '0px'});
+		$('#p4').css({opacity:1, width: '0px', height: '0px'});
+		$('#p5').css({opacity:1, width: '0px', height: '0px'});
+		$('#p6').css({opacity:1, width: '0px', height: '0px'});
+
+
+		$('#mainplanet').animate({width: '272px', height: '163px'}, animation);
+		setTimeout(function() {
+			setTimeout(function() {
+				$('#p3').animate({width: '75px', height: '75px'},animation);
+				setTimeout(function() {
+					$('#p1').animate({width: '75px', height: '75px'},animation);
+					setTimeout(function() {
+						$('#p2').animate({width: '75px', height: '75px'},animation);
+							setTimeout(function() {
+								$('#p4').animate({width: '75px', height: '75px'},animation);
+								setTimeout(function() {
+									$('#p6').animate({width: '75px', height: '75px'},animation);
+									setTimeout(function() {
+										$('#p5').animate({width: '75px', height: '75px'},animation);
+									}, wait)
+								}, wait)
+							}, wait)
+					}, wait)
+				}, wait)
+			}, wait)
+		}, wait)
+	}
+
+	function bubbleAnimation(pageFunction) {
+		$('#secondarybubble').css({opacity: 1, width: 0, height: 0});
+		$('#bubble').css({opacity: 1, width: 0, height: 0});
+
+		$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize}, 1000);
+
+		setTimeout(function() {
+			$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 1000).delay(250).animate({opacity: 0}, 750);
+			setTimeout(function() {
+				//hide the space jam menu
+				$('#spacejamtable').css({opacity:0})
+				//set up new page
+				pageFunction()
+				$('#secondarybubble').css({opacity: 0})
+			}, 1250)
+		}, 75);
+	}
+
+	function test() {
+		console.log("OIOIOI")
+	}
+	
+</script>
 </html>
