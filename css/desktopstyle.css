@@ -1,5 +1,8 @@
 * {
 	margin: 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: 300;
 }
 
 body {
@@ -8,7 +11,7 @@ body {
 
 	background-color: #1A232C;
 	overflow: hidden;
-	background-image: url('../images/bg.png');
+	/*background-image: url('../images/bg.png');*/
 
 	background-attachment: fixed;
 	background-size: cover;
@@ -108,6 +111,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	
+	z-index: 1000;
 
 	border-radius: 50%;
 	background-color: #64B5F6;
@@ -121,4 +126,48 @@ body {
 
 	border-radius: 50%;
 	background-color: #42A5F5;
+}
+
+#pagecontainer {
+	/*padding: 2.5em 2.5em 0em 2.5em;*/
+	z-index: -999;
+	background-color: #000;
+	opacity: 0;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	border-radius: 3px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.page {
+	padding: 5em 5em 0 5em;
+}
+
+#page1, #page2, #page3, #page4, #page5, #page6 {
+	opacity: 0;
+}
+
+#backhomebutton {
+	cursor: pointer;
+}
+
+h1 {
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1em;
+	text-align: center;
+	letter-spacing: 0.15em;
+	margin 0 auto;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
 }

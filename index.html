@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/desktopstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300" rel="stylesheet">
 	<title>Computer Science</title>
 </head>
 <body>
@@ -29,12 +30,33 @@
 			<img src="https://via.placeholder.com/75x75" alt="" id="p6" class="circle">
 		</div>
 	</div>
-
+	<div id="pagecontainer">
+		<div class="page" id="page1">
+			<h1>Page 1</h1>
+			This is a test page
+		</div>
+		<div class="page" id="page2">
+			<h1>Page 2</h1>
+		</div>
+		<div class="page" id="page3">
+			<h1>Page 3</h1>
+		</div>
+		<div class="page" id="page4">
+			<h1>Page 4</h1>
+		</div>
+		<div class="page" id="page5">
+			<h1>Page 5</h1>
+		</div>
+		<div class="page" id="page6">
+			<h1>Page 6</h1>
+		</div>
+		<div >
+			<img src="./images/back.png" alt="" id="backhomebutton">
+		</div>
+	</div>
 	<centre>
 		<div id="secondarybubble"></div>
-		<div id="bubble">
-			
-		</div>
+		<div id="bubble"></div>
 	</center>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -49,10 +71,13 @@
 		HEIGHT = $(window).height();
 	});
 
+	$('#backhomebutton').click(backhome);
+
 	function spacejam() {
 		var wait = 250;
 			animation = 750
 
+		$('#pagecontainer').css({opacity: 0, 'z-index': '-999'});
 		$('#spacejam').css({opacity: 1})
 
 		$('#mainplanet').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
@@ -86,7 +111,12 @@
 		}, wait)
 	}
 
-	function bubbleAnimation(pageFunction) {
+	function backhome() {
+		$('#pagecontainer').animate({opacity: 0}, 300);
+		setTimeout(spacejam, 500)
+	}
+
+	function bubbleAnimation(n) {
 		$('#secondarybubble').css({opacity: 1, width: 0, height: 0});
 		$('#bubble').css({opacity: 1, width: 0, height: 0});
 
@@ -98,16 +128,44 @@
 				//hide the space jam menu
 				$('#spacejam').css({opacity:0})
 				//set up new page
-				pageFunction()
-				$('#secondarybubble').css({opacity: 0})
+				page(n);
+				$('#secondarybubble').css({opacity: 0, width: 0, height: 0});
+				setTimeout(function() {$('#bubble').css({width: 0, height: 0})}, 500)
 			}, 1250)
 		}, 100);
 	}
 
-	function test() {
-		console.log("OIOIOI")
+	function page(n) {
+		$('#page1').css({opacity: 0, padding: 0, height: 0});
+		$('#page2').css({opacity: 0, padding: 0, height: 0});
+		$('#page3').css({opacity: 0, padding: 0, height: 0});
+		$('#page4').css({opacity: 0, padding: 0, height: 0});
+		$('#page5').css({opacity: 0, padding: 0, height: 0});
+		$('#page6').css({opacity: 0, padding: 0, height: 0});
+
+		$('#pagecontainer').css({opacity: 0.75, 'z-index': '999'});
+		$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%'});
 	}
 
-	spacejam()
+	spacejam();
+
+	$('#p1').click(function() {
+		bubbleAnimation(1)
+	});
+	$('#p2').click(function() {
+		bubbleAnimation(2)
+	});
+	$('#p3').click(function() {
+		bubbleAnimation(3)
+	});
+	$('#p4').click(function() {
+		bubbleAnimation(4)
+	});
+	$('#p5').click(function() {
+		bubbleAnimation(5)
+	});
+	$('#p6').click(function() {
+		bubbleAnimation(6)
+	});
 </script>
 </html>
