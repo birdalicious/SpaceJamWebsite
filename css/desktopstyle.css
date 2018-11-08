@@ -6,7 +6,6 @@ body {
 	height: 100%;
 	width: 100%;
 
-	position: relative;
 	background-color: #1A232C;
 	overflow: hidden;
 	background-image: url('../images/bg.png');
@@ -14,12 +13,90 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 
-	overflow: hidden;
 }
 
-table {
-	margin-top: 10%;
-	width: 500px;
+#spacejam {
+	position: absolute;
+	top: 750px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#mainplanetcontainer {
+	position: relative;
+
+	width: 272px;
+	height: 163px;
+	
+	top: 50%;
+	left: 50%;
+}
+
+#mainplanet {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#p1container {
+	position: relative;
+
+	top: -250px;
+	left: -50px;
+
+	width: 75px;
+	height: 75px;
+}
+
+#p2container {
+	position: relative;
+	top: -400px;
+	left: 300px;
+
+	width: 150px;
+	height: 150px;
+}
+
+#p3container {
+	position: relative;
+	top: -450px;
+	left: 350px;
+
+	width: 95px;
+	height: 95px;
+}
+
+#p4container {
+	position: relative;
+	top: -350px;
+	left: 250px;
+
+	width: 75px;
+	height: 75px;
+}
+
+#p5container {
+	position: relative;
+	top: -375px;
+	left: 100px;
+
+	width: 75px;
+	height: 75px;
+}
+
+#p6container {
+	position: relative;
+	top: -525px;
+	left: -50px;
+
+	width: 75px;
+	height: 75px;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .circle {
