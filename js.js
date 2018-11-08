@@ -60,7 +60,7 @@ function bubbleAnimation(n) {
 	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize}, 750);
 
 	setTimeout(function() {
-		$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 750).delay(125).animate({opacity: 0}, 500);
+		$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 750).delay(10).animate({opacity: 0}, 750);
 		setTimeout(function() {
 			//hide the space jam menu
 			$('#spacejam').css({opacity:0})
