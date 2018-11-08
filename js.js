@@ -57,10 +57,10 @@ function bubbleAnimation(n) {
 	$('#secondarybubble').css({opacity: 1, width: 0, height: 0});
 	$('#bubble').css({opacity: 1, width: 0, height: 0});
 
-	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize}, 1000);
+	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize}, 750);
 
 	setTimeout(function() {
-		$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 1000).delay(250).animate({opacity: 0}, 750);
+		$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 750).delay(125).animate({opacity: 0}, 500);
 		setTimeout(function() {
 			//hide the space jam menu
 			$('#spacejam').css({opacity:0})
@@ -68,7 +68,7 @@ function bubbleAnimation(n) {
 			page(n);
 			$('#secondarybubble').css({opacity: 0, width: 0, height: 0});
 			setTimeout(function() {$('#bubble').css({width: 0, height: 0})}, 500)
-		}, 1250)
+		}, 1000)
 	}, 100);
 }
 
