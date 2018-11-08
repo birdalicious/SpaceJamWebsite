@@ -145,6 +145,7 @@ body {
 
 .page {
 	padding: 5em 5em 0 5em;
+	overflow: hidden;
 }
 
 #page1, #page2, #page3, #page4, #page5, #page6 {
@@ -153,9 +154,11 @@ body {
 
 #backhomebutton {
 	cursor: pointer;
+	z-index: 1000;
 }
 
 h1 {
+	font-size: 2.5em;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
 }

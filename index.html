@@ -49,6 +49,8 @@
 		</div>
 		<div class="page" id="page6">
 			<h1>Page 6</h1>
+			fgkjdsfg <br>
+			gfdfsoigif <br>
 		</div>
 		<div >
 			<img src="./images/back.png" alt="" id="backhomebutton">
@@ -136,15 +138,15 @@
 	}
 
 	function page(n) {
-		$('#page1').css({opacity: 0, padding: 0, height: 0});
-		$('#page2').css({opacity: 0, padding: 0, height: 0});
-		$('#page3').css({opacity: 0, padding: 0, height: 0});
-		$('#page4').css({opacity: 0, padding: 0, height: 0});
-		$('#page5').css({opacity: 0, padding: 0, height: 0});
-		$('#page6').css({opacity: 0, padding: 0, height: 0});
+		$('#page1').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+		$('#page2').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+		$('#page3').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+		$('#page4').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+		$('#page5').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+		$('#page6').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
 
 		$('#pagecontainer').css({opacity: 0.75, 'z-index': '999'});
-		$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%'});
+		$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%', 'z-index': '999'});
 	}
 
 	spacejam();
