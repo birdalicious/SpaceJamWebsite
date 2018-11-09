@@ -86,22 +86,22 @@ function page(n) {
 }
 
 $('#p1').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 1, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 1, '#FFB74D', '#FFA726')
 });
 $('#p2').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 2, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 2, '#9575CD', '#7E57C2')
 });
 $('#p3').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 3, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 3, '#E57373', '#EF5350')
 });
 $('#p4').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 4, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 4, '#81C784', '#66BB6A')
 });
 $('#p5').click(function(event) {
 	bubbleAnimation(event.pageX, event.pageY, 5, '#64B5F6', '#42A5F5')
 });
 $('#p6').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 6, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 6, '#4DB6AC', '#26A69A')
 });
 
 spacejam()
