@@ -29,8 +29,8 @@ body {
 #mainplanetcontainer {
 	position: relative;
 
-	width: 272px;
-	height: 163px;
+	width: 325px;
+	/*height: 103px;*/
 	
 	top: 50%;
 	left: 50%;
