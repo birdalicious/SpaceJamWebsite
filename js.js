@@ -6,6 +6,7 @@ var bubbleSize = WIDTH*2;
 $(window).resize(function() {
 	WIDTH = $(window).width();
 	HEIGHT = $(window).height();
+	bubbleSize = WIDTH*2
 });
 
 $('#backhomebutton').click(backhome);
