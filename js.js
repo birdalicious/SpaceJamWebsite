@@ -98,7 +98,7 @@ $('#p4').click(function(event) {
 	bubbleAnimation(event.pageX, event.pageY, 4, '#81C784', '#66BB6A')
 });
 $('#p5').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 5, '#64B5F6', '#42A5F5')
+	bubbleAnimation(event.pageX, event.pageY, 5, '#E1E1AA', '#D7D69A')
 });
 $('#p6').click(function(event) {
 	bubbleAnimation(event.pageX, event.pageY, 6, '#4DB6AC', '#26A69A')
