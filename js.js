@@ -54,9 +54,9 @@ function backhome() {
 	setTimeout(spacejam, 500)
 }
 
-function bubbleAnimation(x,y,n) {
-	$('#secondarybubble').css({opacity: 1, width: 0, height: 0, top: y, left: x});
-	$('#bubble').css({opacity: 1, width: 0, height: 0, top: y, left: x});
+function bubbleAnimation(x,y,n,primary,secondary) {
+	$('#secondarybubble').css({opacity: 1, width: 0, height: 0, top: y, left: x, 'background-color': secondary});
+	$('#bubble').css({opacity: 1, width: 0, height: 0, top: y, left: x, 'background-color': primary});
 
 	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize, top: y-WIDTH, left: x-WIDTH}, 750);
 
@@ -86,22 +86,22 @@ function page(n) {
 }
 
 $('#p1').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 1)
+	bubbleAnimation(event.pageX, event.pageY, 1, '#64B5F6', '#42A5F5')
 });
 $('#p2').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 2)
+	bubbleAnimation(event.pageX, event.pageY, 2, '#64B5F6', '#42A5F5')
 });
 $('#p3').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 3)
+	bubbleAnimation(event.pageX, event.pageY, 3, '#64B5F6', '#42A5F5')
 });
 $('#p4').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 4)
+	bubbleAnimation(event.pageX, event.pageY, 4, '#64B5F6', '#42A5F5')
 });
 $('#p5').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 5)
+	bubbleAnimation(event.pageX, event.pageY, 5, '#64B5F6', '#42A5F5')
 });
 $('#p6').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 6)
+	bubbleAnimation(event.pageX, event.pageY, 6, '#64B5F6', '#42A5F5')
 });
 
 spacejam()
