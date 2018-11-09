@@ -20,7 +20,8 @@ body {
 
 #spacejam {
 	position: absolute;
-	top: 750px;
+	margin-top: 10%;
+	top: 600px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -108,9 +109,9 @@ body {
 
 #bubble {
 	position: absolute;
-	top: 50%;
+	/*top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 	
 	z-index: 1000;
 
@@ -120,9 +121,9 @@ body {
 
 #secondarybubble {
 	position: absolute;
-	top: 50%;
+	/*top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 
 	border-radius: 50%;
 	background-color: #42A5F5;

@@ -53,17 +53,17 @@ function backhome() {
 	setTimeout(spacejam, 500)
 }
 
-function bubbleAnimation(n) {
-	$('#secondarybubble').css({opacity: 1, width: 0, height: 0});
-	$('#bubble').css({opacity: 1, width: 0, height: 0});
+function bubbleAnimation(x,y,n) {
+	$('#secondarybubble').css({opacity: 1, width: 0, height: 0, top: y, left: x});
+	$('#bubble').css({opacity: 1, width: 0, height: 0, top: y, left: x});
 
-	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize}, 750);
+	$('#secondarybubble').animate({width: bubbleSize, height: bubbleSize, top: y-WIDTH, left: x-WIDTH}, 750);
 
 	setTimeout(function() {
-		$('#bubble').animate({width: bubbleSize, height: bubbleSize}, 750).delay(10).animate({opacity: 0}, 750);
+		$('#bubble').animate({width: bubbleSize, height: bubbleSize, top: y-WIDTH, left: x-WIDTH}, 750).delay(10).animate({opacity: 0}, 750);
 		setTimeout(function() {
 			//hide the space jam menu
-			$('#spacejam').css({opacity:0})
+			$('#spacejam').css({opacity:0});
 			//set up new page
 			page(n);
 			$('#secondarybubble').css({opacity: 0, width: 0, height: 0});
@@ -84,23 +84,23 @@ function page(n) {
 	$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%', 'z-index': '999'});
 }
 
-$('#p1').click(function() {
-	bubbleAnimation(1)
+$('#p1').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 1)
 });
-$('#p2').click(function() {
-	bubbleAnimation(2)
+$('#p2').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 2)
 });
-$('#p3').click(function() {
-	bubbleAnimation(3)
+$('#p3').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 3)
 });
-$('#p4').click(function() {
-	bubbleAnimation(4)
+$('#p4').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 4)
 });
-$('#p5').click(function() {
-	bubbleAnimation(5)
+$('#p5').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 5)
 });
-$('#p6').click(function() {
-	bubbleAnimation(6)
+$('#p6').click(function(event) {
+	bubbleAnimation(event.pageX, event.pageY, 6)
 });
 
 spacejam()
