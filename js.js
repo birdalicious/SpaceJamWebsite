@@ -84,8 +84,6 @@ function page(n) {
 	$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%', 'z-index': '999'});
 }
 
-spacejam();
-
 $('#p1').click(function() {
 	bubbleAnimation(1)
 });
@@ -104,3 +102,5 @@ $('#p5').click(function() {
 $('#p6').click(function() {
 	bubbleAnimation(6)
 });
+
+page(4);

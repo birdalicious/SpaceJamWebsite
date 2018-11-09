@@ -158,14 +158,20 @@ body {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
 }
 
 h2 {
+	font-size: 1.5em;
+	letter-spacing: 0.15em;
+	margin 0 auto;
+	text-transform: uppercase;
+}
+
+h3 {
 	font-size: 1em;
-	text-align: center;
 	letter-spacing: 0.15em;
 	margin 0 auto;
 	text-transform: uppercase;
@@ -174,3 +180,40 @@ h2 {
 a {
 	text-decoration: none;
 }
+
+.authorpage {
+	text-align: center
+}
+
+.authorimage {
+	width: 184px;
+	height: 184px;
+	border-radius: 50%;
+	margin-bottom: 3em;
+}
+
+.authorinfo {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.fa {
+	font-size: 2em
+}
+
+.socialmedia a {
+	padding: 0.25em 0.25em;
+	margin: 0 0.3em;
+	position: relative;
+	bottom:0;
+	
+	-webkit-transition: .1s linear;
+	-moz-transition: .1s linear;
+	-o-transition: .1s linear;
+	transition: 0.1s linear;
+}
+
+/*.socialmedia a:hover {
+	bottom: 0.25em;
+	padding-bottom: 0.5em;
+}*/
