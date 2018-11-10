@@ -80,9 +80,11 @@ function page(n) {
 	$('#page4').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
 	$('#page5').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
 	$('#page6').css({opacity: 0, padding: 0, height: 0, 'z-index': '-999'});
+	$('p').css({width: 0})
 
 	$('#pagecontainer').css({opacity: 0.75, 'z-index': '999'});
 	$('#page' + n).css({opacity: 1, padding: '5em 5em 0em 5em', height: '100%', 'z-index': '999'});
+	$('#page' + n + '> p').css({width: '100%'});
 }
 
 $('#p1').click(function(event) {

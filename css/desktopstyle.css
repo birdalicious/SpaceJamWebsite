@@ -20,7 +20,7 @@ body {
 
 #spacejam {
 	position: absolute;
-	margin-top: 10%;
+	/*margin-top: 10%;*/
 	top: 600px;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -29,8 +29,8 @@ body {
 #mainplanetcontainer {
 	position: relative;
 
-	width: 272px;
-	height: 163px;
+	width: 325px;
+	/*height: 103px;*/
 	
 	top: 50%;
 	left: 50%;
@@ -45,7 +45,7 @@ body {
 #p1container {
 	position: relative;
 
-	top: -250px;
+	top: -150px;
 	left: -50px;
 
 	width: 75px;
@@ -54,8 +54,8 @@ body {
 
 #p2container {
 	position: relative;
-	top: -400px;
-	left: 300px;
+	top: -300px;
+	left: 250px;
 
 	width: 150px;
 	height: 150px;
@@ -63,8 +63,8 @@ body {
 
 #p3container {
 	position: relative;
-	top: -450px;
-	left: 350px;
+	top: -300px;
+	left: 400px;
 
 	width: 95px;
 	height: 95px;
@@ -72,26 +72,26 @@ body {
 
 #p4container {
 	position: relative;
-	top: -350px;
-	left: 250px;
+	top: -250px;
+	left: 300px;
 
-	width: 75px;
-	height: 75px;
+	width: 85px;
+	height: 85px;
 }
 
 #p5container {
 	position: relative;
-	top: -375px;
-	left: 100px;
+	top: -300px;
+	left: 125px;
 
-	width: 75px;
-	height: 75px;
+	width: 90px;
+	height: 90px;
 }
 
 #p6container {
 	position: relative;
-	top: -525px;
-	left: -50px;
+	top: -450px;
+	left: 0px;
 
 	width: 75px;
 	height: 75px;
@@ -101,6 +101,7 @@ body {
 	position: absolute;
 	width: 0%;
 	height: 0%;
+	cursor: pointer;
 }
 
 .circle {
@@ -131,22 +132,28 @@ body {
 
 #pagecontainer {
 	/*padding: 2.5em 2.5em 0em 2.5em;*/
+	/*padding-top: 5em;*/
 	z-index: -999;
 	background-color: #000;
 	opacity: 0;
-
-	position: fixed;
+	
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	
+	max-height: 100%;
 
+	overflow: auto;
+	
 	border-radius: 3px;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .page {
-	padding: 5em 5em 0 5em;
-	overflow: hidden;
+	padding: 0em 5em 0 5em;
+	max-height:150%;
+	overflow-y: auto;
 }
 
 #page1, #page2, #page3, #page4, #page5, #page6 {
