@@ -26,6 +26,47 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+#titles {
+	position: absolute;
+	top: 0;
+}
+
+#p1title {
+	position: absolute;
+	top: -95px;
+	left: -85px;
+}
+
+#p2title {
+	position: absolute;
+	top: -195px;
+	left: 215px;
+}
+
+#p3title {
+	position: absolute;
+	top: -35px;
+	left: 365px;
+}
+
+#p4title {
+	position: absolute;
+	top: 175px;
+	left: 265px;
+}
+
+#p5title {
+	position: absolute;
+	top: 210px;
+	left: 75px;
+}
+
+#p6title {
+	position: absolute;
+	top: 125px;
+	left: -65px;
+}
+
 #mainplanetcontainer {
 	position: relative;
 
@@ -44,7 +85,6 @@ body {
 
 #p1container {
 	position: relative;
-
 	top: -150px;
 	left: -50px;
 
@@ -72,7 +112,7 @@ body {
 
 #p4container {
 	position: relative;
-	top: -250px;
+	top: -200px;
 	left: 300px;
 
 	width: 85px;
@@ -81,7 +121,7 @@ body {
 
 #p5container {
 	position: relative;
-	top: -300px;
+	top: -250px;
 	left: 125px;
 
 	width: 90px;
@@ -90,8 +130,8 @@ body {
 
 #p6container {
 	position: relative;
-	top: -450px;
-	left: 0px;
+	top: -425px;
+	left: -25px;
 
 	width: 75px;
 	height: 75px;

@@ -18,6 +18,13 @@ function spacejam() {
 	$('#pagecontainer').css({opacity: 0, 'z-index': '-999'});
 	$('#spacejam').css({opacity: 1})
 
+	$('#p1title').css({opacity: 0});
+	$('#p2title').css({opacity: 0});
+	$('#p3title').css({opacity: 0});
+	$('#p4title').css({opacity: 0});
+	$('#p5title').css({opacity: 0});
+	$('#p6title').css({opacity: 0});
+
 	$('#mainplanet').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
 	$('#p1').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
 	$('#p2').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
@@ -32,14 +39,22 @@ function spacejam() {
 			$('#p1').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
 			setTimeout(function() {
 				$('#p2').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
+				$('#p1title').animate({opacity: 1}, animation);
 				setTimeout(function() {
 					$('#p3').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
+					$('#p2title').animate({opacity: 1}, animation);
 					setTimeout(function() {
 						$('#p4').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
+						$('#p3title').animate({opacity: 1}, animation);
 						setTimeout(function() {
 							$('#p5').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
+							$('#p4title').animate({opacity: 1}, animation);
 							setTimeout(function() {
 								$('#p6').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'},animation);
+								$('#p5title').animate({opacity: 1}, animation);
+								setTimeout(function() {
+									$('#p6title').animate({opacity: 1}, animation);
+								}, wait);
 							}, wait)
 						}, wait)
 					}, wait)
