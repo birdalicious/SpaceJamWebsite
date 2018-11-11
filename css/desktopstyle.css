@@ -33,19 +33,19 @@ body {
 
 #p1title {
 	position: absolute;
-	top: -95px;
+	top: -35px;
 	left: -85px;
 }
 
 #p2title {
 	position: absolute;
-	top: -140px;
+	top: -130px;
 	left: 180px;
 }
 
 #p3title {
 	position: absolute;
-	top: -25px;
+	top: 25px;
 	left: 360px;
 }
 
@@ -58,7 +58,7 @@ body {
 #p5title {
 	position: absolute;
 	top: 210px;
-	left: 75px;
+	left: 80px;
 }
 
 #p6title {
@@ -112,7 +112,7 @@ body {
 
 #p4container {
 	position: relative;
-	top: -200px;
+	top: -250px;
 	left: 300px;
 
 	width: 85px;
@@ -121,7 +121,7 @@ body {
 
 #p5container {
 	position: relative;
-	top: -250px;
+	top: -300px;
 	left: 125px;
 
 	width: 90px;
@@ -130,7 +130,7 @@ body {
 
 #p6container {
 	position: relative;
-	top: -425px;
+	top: -475px;
 	left: -25px;
 
 	width: 75px;
