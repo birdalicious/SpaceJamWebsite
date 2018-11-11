@@ -192,7 +192,7 @@ body {
 
 .page {
 	padding: 0em 5em 0 5em;
-	max-height:150%;
+	/*max-height:150%;*/
 	overflow-y: auto;
 }
 
