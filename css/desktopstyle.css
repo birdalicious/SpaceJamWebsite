@@ -11,7 +11,7 @@ body {
 
 	background-color: #1A232C;
 	overflow: hidden;
-	/*background-image: url('../images/bg.png');*/
+	background-image: url('../images/bg.png');
 
 	background-attachment: fixed;
 	background-size: cover;
@@ -39,8 +39,8 @@ body {
 
 #p2title {
 	position: absolute;
-	top: -195px;
-	left: 215px;
+	top: -140px;
+	left: 180px;
 }
 
 #p3title {
