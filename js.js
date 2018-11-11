@@ -103,7 +103,7 @@ function page(n) {
 }
 
 $('#p1').click(function(event) {
-	bubbleAnimation(event.pageX, event.pageY, 1, '#FFB74D', '#FFA726')
+	bubbleAnimation(event.pageX, event.pageY, 1, '#FF8A65', '#FF7043')
 });
 $('#p2').click(function(event) {
 	bubbleAnimation(event.pageX, event.pageY, 2, '#9575CD', '#7E57C2')
