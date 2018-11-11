@@ -59,6 +59,8 @@ body {
 	position: absolute;
 	top: 210px;
 	left: 80px;
+	top: 250px;
+	left: 78px;
 }
 
 #p6title {
@@ -261,7 +263,7 @@ a {
 	transition: 0.1s linear;
 }
 
-/*.socialmedia a:hover {
+.socialmedia a:hover {
 	bottom: 0.25em;
 	padding-bottom: 0.5em;
-}*/
+}
