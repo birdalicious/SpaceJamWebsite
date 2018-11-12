@@ -26,12 +26,6 @@ function spacejam() {
 	$('#p6title').css({opacity: 0});
 
 	$('#mainplanet').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p1').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p2').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p3').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p4').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p5').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
-	$('#p6').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
 
 	$('#mainplanet').animate({width: '100%', height: '100%', top: '-50%', left: '-50%'}, animation);
 	setTimeout(function() {
@@ -83,7 +77,19 @@ function bubbleAnimation(x,y,n,primary,secondary) {
 			//set up new page
 			page(n);
 			$('#secondarybubble').css({opacity: 0, width: 0, height: 0});
-			setTimeout(function() {$('#bubble').css({width: 0, height: 0})}, 500)
+			setTimeout(function() {
+				$('#bubble').css({width: 0, height: 0})
+				
+				
+				
+				$('#p1').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+				$('#p2').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+				$('#p3').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+				$('#p4').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+				$('#p5').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+				$('#p6').css({opacity:1, width: '0px', height: '0px', top: 0, left: 0});
+			}, 500)
+			
 		}, 1000)
 	}, 100);
 }
